@@ -1,0 +1,37 @@
+@charset "utf-8";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgb(19, 90, 131), rgb(13, 110, 122));
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(34, 143, 143, 0.411);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 50px;
+    text-align: center;
+    text-align: justify;
+
+}
+
+#res {
+    margin: 50px;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    margin: 3px;
+}
