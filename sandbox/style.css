@@ -1,1 +1,72 @@
 @charset "utf-8";
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, black, rgb(15, 13, 22));
+    margin: 0px;
+    padding: 0px;
+}
+
+div.container {
+    width: 700px;
+    height: 700px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    box-shadow: 1px 1px 19px 15px rgba(255, 255, 255, 0.192);
+}
+
+h1 {
+    font-size: 4em;
+    text-shadow: 1px 1px 1px 19px rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+    position: relative;
+    bottom: 218px;
+    width: 700px;
+    height: 100px;
+    text-align: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+span {
+    position: relative;
+    right: 300px;
+    bottom: 45px;
+    margin: 0px;
+    padding: 0px;
+}
+.material-symbols-outlined{
+    position: relative;
+    left: 290px;
+    bottom: 65px;
+    margin: 0px;
+    padding: 0px; 
+}
+
+div > input {
+    font-size: 2em;
+    margin: 0px;
+    width: 650px;
+    height: 60px;
+    outline: none;
+    border-radius: 40px;
+    border: none;
+    text-indent: 48px;
+}
+
+div>input:hover {
+    transition: 1s;
+    background-color: rgba(2, 10, 10, 0.384);
+    transform: translate(2, 2);
+}
