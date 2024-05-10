@@ -29,10 +29,10 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     position: relative;
-    bottom: 218px;
+    bottom: 206px;
     width: 700px;
     height: 100px;
     text-align: center;
