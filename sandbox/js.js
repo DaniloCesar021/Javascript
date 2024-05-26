@@ -1,4 +1,11 @@
-let num = [1, 2 ,10,7 ,6 ,8]
-num.push(29)
-num.sort
-console.log(`${num}`)
+function pouimp(pi){
+    if (pi % 2 == 0){
+        return "par"
+    }
+        else {
+            return "impar"
+        }
+    
+}
+let res = pouimp(183119911)
+console.log(`${res}`)

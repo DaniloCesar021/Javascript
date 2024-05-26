@@ -1,28 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="login-box">
- 
-    <form method="post">
-      <div class="user-box">
-        <input type="text" name="" required="">
-        <label>Nome</label>
-      </div>
-      <div class="user-box">
-        <input type="password" name="" required="">
-        <label>Senha</label>
-      </div><center>
-      <a href="#">
-             Enviar
-         <span></span>
-      </a></center>
-    </form>
+  <div class="container">
+    <input type="checkbox" id="register_toggle">
+    <div class="slider">
+      <form class="form" method="post">
+        <span class="title">Login</span>
+        <div class="form_control">
+          <input type="text" class="input" required="">
+          <label class="label">Usuario</label>
+        </div>
+        <div class="form_control">
+          <input type="password" class="input" required="">
+          <label class="label">Senha</label>
+        </div>
+        <button><a href="#">Enviar</a></button>
+
+        <span class="bottom_text">Não tem uma conta?<label for="register_toggle" class="swtich"> registrar</label>
+        </span>
+      </form>
+      <form class="form" method="post">
+        <span class="title">Registrar</span>
+        <div class="form_control">
+          <input type="text" class="input" required="">
+          <label class="label">Usuario</label>
+        </div>
+        <div class="form_control">
+          <input type="email" class="input" required="">
+          <label class="label">Email</label>
+        </div>
+        <div class="form_control">
+          <input type="password" class="input" required="">
+          <label class="label">senha</label>
+        </div>
+        <button>Enviar</button>
+
+        <span class="bottom_text">Ja tem uma conta? <label for="register_toggle" class="swtich"> login</label> </span>
+      </form>
+
+
+    </div>
   </div>
+  <script src="js.js"></script>
+
 </body>
+
 </html>
