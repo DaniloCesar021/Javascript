@@ -1,11 +1,21 @@
-function pouimp(pi){
-    if (pi % 2 == 0){
-        return "par"
+function poi(){
+    let ip1 = document.getElementById('ip1')
+    let res = document.getElementById('res')
+    parouimp = Number(ip1.value)
+    if (parouimp % 2 == 0) {
+        res.innerHTML = 'Par'
+    } else {
+        res.innerHTML= 'impar'
     }
-        else {
-            return "impar"
-        }
-    
+
 }
-let res = pouimp(183119911)
-console.log(`${res}`)
+function poi(x){
+    let res = document.getElementById('res')
+    let parouimp = Number(x.value)
+    if (parouimp % 2 == 0) {
+        res.innerHTML = 'Par'
+    } else {
+        res.innerHTML= 'impar'
+    }
+
+}
