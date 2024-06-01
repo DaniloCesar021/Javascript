@@ -6,43 +6,35 @@ var tab = document.getElementById('sel')
 //
 var ln = []
 
-//
+// ||
 
 
 //
 function adicionar() {
-    if (add.value > 100 || add.value <= 0) {
+    var num = Number(add.value)
+    if (add.value > 100 || add.value <= 0 ) {
         alert('deu juca')
 
 
     } else {
-        //let ln = []
-        let num = Number(document.getElementById('num').value)
-        ln = [num]
+        ln.push(num)
+        ln.sort()
         let item = document.createElement('option')
         item.text += `Valor: ${num}`
         tab.appendChild(item)
-        /* let ln = [Number(add.value)]
-         let item = document.createElement('option')
-         tab.innerHTML += ''
-         item.text += `Valor: ${n}`
-         tab.appendChild(item)
-         tab.sort() */
-
-
+       
 
 
     }
-
 }
 //////////////////////////////////////////////////////////
 
 function finalizar() {
      
- 
-    res.innerHTML(item)
-    res.innerHTML = `Ao todo temos ${tab.length} numeros`
     
+    res.innerHTML += `${c}`
+    res.innerHTML += `Ao todo temos ${tab.length} numeros`
+    alert(ln)
 
 
 }
