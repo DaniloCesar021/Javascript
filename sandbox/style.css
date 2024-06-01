@@ -1,15 +1,39 @@
 @charset "utf-8";
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 body {
+    margin: 0px;
+    padding: 0px;
     width: 100vw;
     height: 100vh;
     font-size: 3em;
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, rgb(151, 112, 40),rgb(187, 136, 42));
+    background-image: linear-gradient(to right, rgb(151, 112, 40), rgb(187, 136, 42));
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
 }
 
 img {
+    margin: 0px;
+    padding: 0px;
     width: 200px;
     height: 200px;
+    cursor: pointer;
+
+}
+
+img:hover {
+    margin: 0px;
+    padding: 0px;
+    transition: 0.3s;
+    transform: translate(-8px, -8px);
 }
