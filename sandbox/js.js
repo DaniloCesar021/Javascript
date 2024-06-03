@@ -3,6 +3,7 @@ function clicar() {
   n++
   let res = document.getElementById('res')
   res.innerHTML = (` + ${n} biscoitos`)
+  
 
 }
 
