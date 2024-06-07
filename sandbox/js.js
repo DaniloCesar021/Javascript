@@ -1,10 +1,10 @@
-var n = 0
-function clicar() {
-  n++
-  let res = document.getElementById('res')
-  res.innerHTML = (` + ${n} biscoitos`)
-  
+//parametro 
+//argumento
+//retorno
 
+function carros(motor,vel) {
+    const carro = `Um carro com o motor ${motor} atinge uma velocidade de ${vel}`
+    return carro
 }
-
-
+let res = carros('v8','300km/h') 
+console.log (res)
