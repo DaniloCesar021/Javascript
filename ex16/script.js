@@ -1,4 +1,4 @@
-let num = document.getElementById('fnum')     //cria uma variavel 'num' que pega o elemento por id 'fnum' (no caso o elemento colocado dentro do input type number)
+let num = document.getElementById('fnum')//cria uma variavel 'num' que pega o elemento por id 'fnum' (no caso o elemento colocado dentro do input type number)
 let lista = document.getElementById('flista')//cria uma variavel 'lista' que pega o elemento por id 'flista' (a lista criada no html)
 let res = document.getElementById('res') //cria uma variavel 'res' que pega a div de id 'res' 
 let valores = [] //cria uma uma array 'valores' que começa vazia 
@@ -46,19 +46,19 @@ function finalizar() {//ao clicar em finalizar
         let soma = 0          //cria uma variavel soma que recebe 0
         let media = 0        //cria uma variavel media que recebe 0
 
-        for (let pos in valores) {  //Percorre o array valores com um loop for-in
-            soma += valores[pos]   //soma recebo os valores[pos] ou seja soma começa com 0 e acumula a soma de todos os valores do array.
-            if (valores[pos] > maior) // se valores[pos] for maior que a variavel maior
-                maior = valores[pos] //maior recebe valores[pos]
+        for (let pos in valores) {       //Percorre o array valores com um loop for-in
+            soma += valores[pos]        //soma recebo os valores[pos] ou seja soma começa com 0 e acumula a soma de todos os valores do array.
+            if (valores[pos] > maior)  // se valores[pos] for maior que a variavel maior
+                maior = valores[pos]  //maior recebe valores[pos]
             if (valores[pos] < menor)//se valores[pos] for menor que a variavel menor
                 menor = valores[pos]//menor recebe valores[pos]
         }
         media = soma / tot //media recebe soma dividido pelo total
         res.innerHTML = `` //limpa o elemento res
-        res.innerHTML += `<p>Ao todo temos ${tot} numeros cadastrados </p>` //escreve o total
-        res.innerHTML += `<p>O maior valor informado foi o: ${maior} </p>` //escreve o maior
+        res.innerHTML += `<p>Ao todo temos ${tot} numeros cadastrados </p>`  //escreve o total//
+        res.innerHTML += `<p>O maior valor informado foi o: ${maior} </p>`  //escreve o maior
         res.innerHTML += `<p>O menor valor informado foi o: ${menor} </p>` //escreve o menor
-        res.innerHTML += `<p>A soma de todos os valores foi :${soma}</p>`//escreve a soma
+        res.innerHTML += `<p>A soma de todos os valores foi :${soma}</p>` //escreve a soma
         res.innerHTML += `<p>A media de todos os valores é: ${media}</p>`//escreve a media
     }
 }
