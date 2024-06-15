@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+input {
+    text-align: left;
+    color: black;
+    background-color: white;
+    height: 40px;
+    width: 496px;
+    border: none;
+    outline: none;
+}
+
+div.tela {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 2px solid rgb(69, 71, 71);
+    background-color: rgba(211, 211, 211, 0.377);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;
+    height: 100px;
+    border-radius: 40px 40px 0px 0px;
+
+}
+
+div#res {
+    color: rgb(0, 0, 0);
+}
+
+div.container {
+    border-radius: 40px 40px 20px 20px;
+    width: 500px;
+    height: 300px;
+    background-color: rgb(69, 71, 71);
+
+}
+
+div#botao {
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    background-color: rgb(231, 163, 14);
+    font-size: 2em;
+    margin: 0px;
+    border-radius: 50%;
+    width: 120px;
+    height: 100px;
+    border: none
+}
+
+button:hover {
+    background-color: rgb(148, 105, 13);
+    transition: 0.4s;
+}

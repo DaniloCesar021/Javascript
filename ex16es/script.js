@@ -1,68 +1,62 @@
-let num = document.getElementById('fnum')
-let lista = document.getElementById('flista')
-let res = document.getElementById('res')
-let valores = []
+let ipn = document.getElementById('fnum');
+let lista = document.getElementById('flista');
+var res = document.getElementById('res');
+let valores = [];
 
-//verificando se é de 1 a 100
-function valnum(n) {
+function Vnuml(n) {
     if (Number(n) >= 1 && Number(n) <= 100) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
-//verificando se o numero ja esta na lista
-function vallist(n, l) {
+function Vlista(n, l) {
     if (l.indexOf(Number(n)) != -1) {
-        return true
+        return true;
     } else {
-        return false
+        return false;
     }
 }
-
 
 
 
 function adicionar() {
-    if (valnum(num.value) && !vallist(num.value, valores)) {
-        valores.push(Number(num.value))
-        let item = document.createElement('option')
-        item.text = `Valor ${num.value} foi adicionado`
-        lista.appendChild(item)
-
+    if (Vnuml(ipn.value) && !Vlista(ipn.value, valores)) {
+        valores.push(Number(ipn.value));
+        let item = document.createElement('option');
+        item.text = `O numero ${ipn.value} foi adicionado`;
+        lista.appendChild(item);
     } else {
-        alert('[ERRO] Invalido')
+        alert('deu juca');
     }
-    num.value = ''
-    num.focus()
+    res.innerHTML = ``
+    ipn.value = ``
+    ipn.focus()
 }
 
 function finalizar() {
     if (valores.length == 0) {
-        alert('adicione valores')
+        alert('Coloque os dados antes de começar');
     } else {
-        let soma = 0
-        let media = 0
-        let total = valores.length
-        let maior = valores[0]
-        let menor = valores[0]
-        for (let dps in valores) {
-            soma += valores[dps]
-            if (valores[dps] > maior) {
-                maior = valores[dps]
+        let total = valores.length;
+        let soma = 0;
+         let maior = valores[0];
+         let menor = valores[0];
+        for (let prox in valores){
+            if (valores[prox] > maior){
+                maior = valores[prox];
             }
-            if (valores[dps] < menor) {
-                menor = valores[dps]
+            if (valores[prox] < menor){
+                menor = valores[prox];
             }
+            soma += valores[prox];
         }
-        media = soma / total
-        res.innerHTML = ``
-        res.innerHTML += `tem um total de ${total} numeros`
-        res.innerHTML += `<p>O menor valor é ${menor}</p> `
-        res.innerHTML += `<p>O maior valor é ${maior}</p> `
-        res.innerHTML += `<p>a soma dos valores é ${soma} </p>`
-        res.innerHTML += `<p>A media dos valores é  ${media}</p> `
-
-
+        media = valores.length/soma
+        res.innerHTML = `<p>No total foram colocados ${total} numeros</p>`;
+        res.innerHTML += `<p>O maior valor colococado foi ${maior}</p>`;
+        res.innerHTML += `<p>O menor valor colococado foi ${menor}</p>`;
+        res.innerHTML += `<p>A soma dos valores é ${soma}</p>`;
+        res.innerHTML += `<p>A media dos valores é ${media}</p>`;
+        ipn.focus()
     }
 }
