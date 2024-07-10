@@ -8,15 +8,6 @@ amigo.engordar(3)
 console.log(`${amigo.nome} pesa ${amigo.peso} kilos`)*/
 
 
-let pai = {
-    nome: 'luiz', sexo: 'masculino', peso: 70,
-    peso1(p = 0) {
-        this.peso += p
-    }
-}
+let pessoa = {nome: 'miguel', peso: 90 ,sexo: 'masculino', altura: '1.65'}
 
-pai.peso1(10)
-console.log(pai.peso)
-
-
-
+console.log(`${pessoa.nome}`)
