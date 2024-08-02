@@ -2,6 +2,18 @@
 const ip1 = document.getElementById('ip1')
 const ip2 = document.getElementById('ip2')
 const res = document.getElementById('res')
+const b1 = document.querySelector('#b1')
+const b2 = document.querySelector('#b2')
+const b3 = document.querySelector('#b3')
+const b4 = document.querySelector('#b4')
+const b5 = document.querySelector('#b5')
+
+b1.addEventListener('click', tirar)
+b2.addEventListener('click', adicionar)
+b3.addEventListener('click', multiplicar)
+b4.addEventListener('click', dividir)
+b5.addEventListener('click', diminuir)
+
 
 //tirar
 function tirar() {
