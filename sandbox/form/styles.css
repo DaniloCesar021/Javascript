@@ -68,6 +68,28 @@
 
  }
 
+ #ibotao {
+     box-sizing: border-box;
+     position: relative;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     width: 100px;
+     top: 12px;
+     margin: 0;
+     padding: 0;
+     color: rgba(255, 255, 255, 0.637);
+
+ }
+
+ #ibotao:hover {
+     transition: 0.4s;
+     background-image: linear-gradient(to right, black, rgb(2, 20, 20));
+     color: rgba(255, 255, 255, 0.418);
+
+ }
+
  footer {
      display: flex;
      align-items: center;
@@ -85,19 +107,18 @@
 
 
  strong {
-    display: inline-block;
-     
+     display: inline-block;
+
  }
 
  strong:hover {
-    cursor: pointer;
-    transition: 0.3s;
-    margin: 4px;
-    transform: scale(1.1);
+     cursor: pointer;
+     transition: 0.3s;
+     margin: 4px;
+     transform: scale(1.1);
  }
+
  a {
-    text-decoration: none;
-    color: rgb(172, 187, 192);
+     text-decoration: none;
+     color: rgb(172, 187, 192);
  }
-
-
