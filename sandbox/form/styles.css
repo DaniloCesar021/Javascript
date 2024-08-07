@@ -75,11 +75,12 @@
      left: 150px;
      color: rgba(255, 255, 255, 0.616);
  }
+
  .material-symbols-outlined:hover {
-    transition: 0.3s;
-    color: rgba(255, 255, 255, 0.363);
-    
-}
+     transition: 0.3s;
+     color: rgba(255, 255, 255, 0.363);
+
+ }
 
 
  input:hover {
