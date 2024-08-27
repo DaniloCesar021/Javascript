@@ -1,1 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 
+}
+
+/* -------------------scroll bar ------------------ */
+
+/* body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(64, 57, 57);
+    border-radius: 0px;
+}
+ */
+
+/* ------------------------------------- */
+
+header {
+    background-color: rgb(56, 53, 53);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: white;
+
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul {
+
+    display: flex;
+    list-style: none;
+    font-size: 20px;
+
+}
+
+li {
+    border-bottom: 0px solid white;
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+div.logo {
+    position: absolute;
+    left: 50px;
+    font-size: 2em;
+}
+
+div.login {
+    position: absolute;
+    display: flex;
+    padding: 10px;
+    right: 50px;
+}
+
+h3 {
+    padding: 10px;
+}
+
+/* -------------------------------------------------------------------- */
+main {}
+
+section#s1 {
+
+    height: 770px;
+
+}
+
+.carro1 {}
+
+.carro2 {}
+
+
+#s1 h1 {
+
+    font-size: 3.5em;
+
+
+
+}
+
+#s1 p {
+
+    font-size: 1.5em;
+}
+
+div#imgc1 {
+    background-color: rgb(31, 7, 213);
+    width: 500px;
+    height: 300px;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+div#imgc2 {
+    background-color: rgb(195, 128, 19);
+    width: 500px;
+    height: 300px;
+    font-size: 3em;
+    text-align: center;
+
+}
+
+/* -------------------------------------------------------------------- */
+section#s2 {
+    width: 100%;
+    height: 1080px;
+
+}
+
+
+h2 {
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: white;
+    padding: 14px;
+    font-size: 2.5em;
+    background-color: rgb(218, 99, 8);
+    ;
+}
+
+.container {
+    background-color: rgb(56, 53, 53);
+    height: 300px;
+    text-align: center;
+
+}
+
+.bolotas {
+    display: inline-block;
+    position: relative;
+    top: 50px;
+    margin-right: 50px;
+    background-color: purple;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+}
+
+.bolotas p {
+    color: white;
+    position: absolute;
+    top: 105px;
+    font-size: 18px;
+}
+
+
+
+/* ------- */
+p#pf {
+    left: 25px;
+}
+
+/* p#ps {
+     left: 20px;
+} */
+
+/* --------*/
+input {
+    display: block;
+    margin: 100px auto 0 auto;
+    height: 24px;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    padding: 20px;
+    width: 550px;
+    background-color: rgb(50, 47, 47);
+    color: white;
+}
+
+
+
+
+
+
+div.cp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    padding-top: 100px;
+}
+
+.peças {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 320px;
+    margin: 50px;
+    background-color: rgb(56, 53, 53);
+
+}
+
+.peças p {
+    color: rgb(0, 0, 0);
+    position: relative;
+    top: 190px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+}
+
+/* -------------------------------------------------------------------- */
+
+section#s3 {
+
+    color: white;
+    padding: 0px;
+    height: 520px;
+    background-color: rgb(47, 46, 46);
+
+
+
+}
+
+.ds3 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    height: 400px;
+    background-color: rgb(218, 99, 8);
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.ds3-item {
+
+    padding: 20px;
+    height: 100%;
+    width: 30%;
+    box-sizing: border-box;
+}
+
+#s3 h1 {
+    padding: 0px;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 10px;
+
+
+}
+
+#s3 h2 {
+
+    color: rgb(255, 255, 255);
+    font-size: 2.5em;
+
+}
+
+#s3 p {
+    color: rgba(255, 255, 255, 0.897);
+    position: relative;
+    top: 25px;
+    font-size: 2em;
+    text-align: center;
+
+}
+
+/* ----------------------------------------------------------------------- */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    margin: 0;
+    padding: 0;
+    color: white;
+    height: 400px;
+    background-color: rgb(207, 21, 52);
+}
