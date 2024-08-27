@@ -18,14 +18,14 @@ function aumentar() {
 
 document.addEventListener("DOMContentLoaded", function () {
     VanillaTilt.init(document.querySelector("#iemail"), {
-        max: 10,     // era 25
+        max: 8,     // era 25
         speed: 200  //era 400
     });
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-    VanillaTilt.init(document.querySelector("#isenha"), {
-        max: 0,    // era 25
+    VanillaTilt.init(document.querySelector("#ibotao"), {
+        max: 8,    // era 25
         speed: 200 //era 400
     });
 });
@@ -47,14 +47,12 @@ bt.addEventListener('mouseup', ocultar)
 function aparecer() {
     ips.type = "text"
     bt.innerHTML = 'visibility'
-  
-    
+
+
 }
 function ocultar() {
     ips.type = "password"
     bt.innerHTML = 'visibility_off'
-    
+
 }
-
-
 
