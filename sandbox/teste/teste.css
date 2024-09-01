@@ -30,6 +30,8 @@ header {
     height: 150px;
     width: 100%;
     font-family: poppins;
+    z-index: 1;
+    position: relative;
 }
 
 a {
@@ -40,6 +42,7 @@ a {
 }
 
 a:hover {
+
     text-shadow: 1px 1px 10px rgb(255, 255, 255);
     transition: 0.3s;
 
@@ -70,6 +73,11 @@ li {
     border-bottom: 0px solid white;
     letter-spacing: 3px;
     margin-left: 32px;
+}
+
+li:hover {
+    transition: 0.3s;
+    scale: 1.03;
 }
 
 .logo {
@@ -124,26 +132,47 @@ h3 {
 main {}
 
 section#s1 {
+    text-align: justify;
     font-family: poppins;
     height: 770px;
 
+    overflow: hidden;
+    position: relative;
+
 }
+
 
 .carro1 {
-    /*  width: 500px; */
-    border: 3px solid rgb(213, 18, 18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 620px;
+    margin-top: 50px;
 }
 
-.carro2 {
-    /*  height: 500px;
-    width: 500px; 
-    position: relative;*/
-    border: 3px solid rebeccapurple;
+.carro2 {}
+
+img#imgc1 {}
+
+
+img#imgc2 {
+    width: 789px;
+    height: 882px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    object-fit: cover;
+    clip-path: polygon(35% 0, 117% 0, 100% 100%, 20% 100%, 0 80%);
+
 }
+
+
+
 
 
 #s1 h1 {
-
+    text-align: center;
     font-size: 3.5em;
 
 
@@ -151,16 +180,11 @@ section#s1 {
 }
 
 #s1 p {
-
+    text-align: center;
     font-size: 1.5em;
 }
 
-img#imgc1 {}
 
-img#imgc2 {
-    width: 100px;
-    height: 100px;
-}
 
 /* -------------------------Section#2------------------------------ */
 section#s2 {
@@ -230,7 +254,7 @@ p#ps {
 .bolotas:hover {
     transition: 0.3s;
     transform: scale(1.1);
-    /*  transform: translate(-5px, -5px); */
+
 
 
 
@@ -250,8 +274,7 @@ p#ps {
 
 
 input {
-    /*     display: block;
-    margin: 100px auto 0 auto; */
+
     height: 24px;
     border-radius: 30px;
     outline: none;

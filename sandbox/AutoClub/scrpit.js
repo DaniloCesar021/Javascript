@@ -1,4 +1,3 @@
-
 /* ------------------Barra d baixo do login----------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
     const loginDiv = document.querySelector('.login');
