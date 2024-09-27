@@ -1,5 +1,4 @@
 
-/* ------------------Barra d baixo do login----------------------------- */
 document.addEventListener('DOMContentLoaded', function () {
     const loginDiv = document.querySelector('.login');
     const bar = document.querySelector('.bar');
@@ -10,11 +9,35 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
     loginDiv.addEventListener('mouseleave', function () {
-        bar.style.width = '0';
+        bar.style.width = '0%';
     });
+
+
 });
-/* ------------------------------------------------------------------- */
-/* ------------------Efeito logo-------------------------------------- */
+
+
+const h3s1 = document.querySelector('.b3s1')
+const barra = document.querySelector('.barra')
+h3s1.addEventListener('mouseenter', function () {
+    barra.style.width = '0%';
+    barra.style.transition = '0.6s'
+});
+h3s1.addEventListener('mouseleave', function () {
+    barra.style.width = '240px';
+    barra.style.transition = '0.6s'
+});
+
+
+const h3s2 = document.querySelector('.b3s2')
+const barra2 = document.querySelector('.barra2')
+h3s2.addEventListener('mouseenter', function () {
+    barra2.style.width = '0%';
+    barra2.style.transition = '0.6s'
+});
+h3s2.addEventListener('mouseleave', function () {
+    barra2.style.width = '240px';
+    barra2.style.transition = '0.6s'
+});
 
 document.addEventListener("DOMContentLoaded", function () {
     VanillaTilt.init(document.querySelector(".logo"), {
@@ -22,4 +45,3 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 400  //era 400
     });
 });
-/* ------------------------------------------------------------------- */

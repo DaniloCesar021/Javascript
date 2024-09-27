@@ -194,7 +194,7 @@ section#s2 {
 }
 
 
-h2 {
+section#s2 h2 {
     font-family: poppins;
     position: relative;
     top: 30px;
@@ -205,6 +205,7 @@ h2 {
     background-color: rgb(218, 99, 8);
     top: 45px;
 }
+
 
 .container {
     background-color: rgb(56, 53, 53);
@@ -349,6 +350,19 @@ section#s3 {
 
 }
 
+div.ds3 h2 {
+    font-family: poppins;
+    position: relative;
+    top: 30px;
+    text-align: center;
+    color: white;
+    padding: 14px;
+    font-size: 2.5em;
+    background-color: rgb(218, 99, 8);
+    top: 45px;
+}
+
+
 .ds3-item {
 
     padding: 20px;
@@ -385,13 +399,282 @@ section#s3 {
 
 /* ----------------------------footer-------------------------------------- */
 footer {
-    display: flex;
+    /*  display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
     font-size: 2.5em;
     margin: 0;
     padding: 0;
     color: white;
-    height: 400px;
-    background-color: rgb(207, 21, 52);
+    height: 1300px;
+    border: 3px solid rgb(166, 28, 28);
+    background-color: rgb(255, 255, 255);
+}
+
+.barra {
+    border-radius: 20px;
+    width: 240px;
+    height: 4px;
+    background-color: rgb(128, 91, 39);
+    margin-bottom: 15px;
+}
+
+.barra2 {
+    border-radius: 20px;
+    width: 240px;
+    height: 4px;
+    background-color: rgb(128, 91, 39);
+    margin-bottom: 15px;
+}
+
+/* ---------------------section 1------------------- */
+
+/* ---------------------div 1------------------- */
+div.sf1 {
+    height: 700px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+}
+
+
+
+div.d1s1 {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 500px;
+    height: 500px;
+
+}
+
+div.d1s1 h1 {
+    color: black;
+    font-size: 35px;
+    text-indent: 10px;
+}
+
+div.d1s1 h2 {
+    font-size: 24px;
+    color: black;
+
+
+}
+
+div.d1s1 h3 {
+    width: 230px;
+    font-size: 24px;
+    color: black;
+
+
+}
+
+div.d1s1 p {
+
+    color: black;
+
+
+}
+
+div.d1s1 a {
+
+    color: black;
+    color: rgba(0, 0, 255, 0.718);
+
+}
+
+
+/* ---------------------div 2------------------- */
+
+
+div.d2s1 {
+    margin-top: 10px;
+    font-size: 30px;
+    width: 500px;
+    height: 500px;
+
+}
+
+div.d2s1 h1 {
+    text-indent: 10px;
+    color: black;
+    font-size: 35px;
+
+
+}
+
+div.d2s1 h2 {
+    font-size: 24px;
+    color: black;
+
+
+}
+
+div.d2s1 h3 {
+    width: 230px;
+    font-size: 24px;
+    color: black;
+
+
+}
+
+div.d2s1 p {
+
+    color: black;
+
+
+}
+
+div.d2s1 a {
+
+    color: black;
+    color: rgba(0, 0, 255, 0.72);
+
+}
+
+/* ---------------------section 2------------------- */
+div.sf2 {
+
+    height: 600px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: poppins;
+    background-size: cover;
+    background-image: url(../AutoClub/imagens/Background\ footer.png);
+
+}
+
+.sf2 img#i1 {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    top: 365px;
+    left: 10px;
+}
+
+.sf2 img#i2 {
+    color: white;
+    top: 130px;
+    left: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.d1s2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    bottom: 100px;
+    width: 500px;
+    height: 500px;
+    background-color: rgb(208, 31, 31);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.510);
+}
+
+
+button {
+    width: 400px;
+    margin-top: 50px;
+    font-size: 30px;
+    border: 3px solid white;
+    background-color: rgb(208, 31, 31);
+    padding: 10px;
+    color: white;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: white;
+    transform: scale(1.06);
+    color: black;
+    transition: 0.6s;
+}
+
+
+.d1s2 p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 50px;
+
+}
+
+.d2s2 {
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.487);
+    color: white;
+    text-decoration: none;
+    position: relative;
+    bottom: 25px;
+    width: 500px;
+    height: 550px;
+
+}
+
+.d2s2 img {
+    box-sizing: border-box;
+    margin: 0;
+    width: 165px;
+    height: 80px;
+    object-fit: cover;
+}
+
+/* .d2s2 img:hover {
+    cursor: pointer;
+    translate: -3% -3%;
+    transition: 0.6s;
+    
+} */
+
+.d2s2 h2 {
+    margin-top: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 45px;
+}
+
+.d2s2 h3 {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+.d2s2 p {
+    font-size: 14px;
+
+}
+
+.colunas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 80px;
+
+
+}
+
+.d2s2 h4 {
+    font-size: 15px;
+    text-align: center;
+
+}
+
+
+
+.d3s2 {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
 }
