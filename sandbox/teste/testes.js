@@ -1,5 +1,5 @@
 
-document.addEventListener('DOMContentLoaded', function () {
+document.addEventListener('DOMContentLoaded', () => {
     const loginDiv = document.querySelector('.login');
     const bar = document.querySelector('.bar');
 

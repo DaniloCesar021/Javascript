@@ -1,9 +1,21 @@
-const soma = (v1, v2) => { 
-    let res = v1 + v2 
+const soma = (v1, v2) => {
+    let res = v1 + v2
     return res
 }
 
 console.log(soma(129, 3))
+
+/* //////////////////////////////////////////////////////////////////////////////////////////// */
+
+const idade = (id) => {
+    if (id >= 18) {
+        return 'maior de idade';
+    } else {
+        return 'menor de idade';
+    }
+};
+
+console.log(idade(18));
 
 /* //////////////////////////////////////////////////////////////////////////////////////////// */
 
@@ -15,5 +27,5 @@ console.log(nome('bruno'))
 
 const add = n => n + 10 //? em alguns casos não precisa de return
 
-console.log(add(10)) 
+console.log(add(10))
 

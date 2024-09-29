@@ -1,5 +1,5 @@
 const soma = (...valores) => {
-    const somar = (val) => {
+    const somar = val => {
         let res = 0
         for (v of val) {
             res += v
@@ -8,5 +8,7 @@ const soma = (...valores) => {
     }
     return somar(valores)
 }
-console.log(soma(10, 4, 15, 1))
+console.log(soma(10, 5, 15))
 
+
+//arrow function aninhada com parametro rest
