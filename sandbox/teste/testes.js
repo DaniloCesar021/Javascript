@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
         bar.style.width = '0%';
     });
 
-
+ 
 });
 
 
