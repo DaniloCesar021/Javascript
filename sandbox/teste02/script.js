@@ -1,12 +1,8 @@
-const soma = (...valores) => {
-    const somar = (val) => {
-        let res = 0
-        for (v of val) {
-            res += v
-        }
-        return res
+const soma = (...numeros) => {
+    let n = 0 
+    for(v of numeros){
+        n += v
     }
-    return somar(valores)
+    return n
 }
-console.log(soma(10, 4, 15, 1))
-
+console.log(soma(120,5))
