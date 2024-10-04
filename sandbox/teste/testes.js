@@ -45,3 +45,4 @@ document.addEventListener("DOMContentLoaded", function () {
         speed: 400  //era 400
     });
 });
+
