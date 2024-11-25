@@ -1,201 +1,88 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
-        integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tabela de Preços</title>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js" integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="teste.css">
+</head>
 
 <body>
-    <header>
-        <nav>
-            <img src="../AutoClub/imagens/logo.png" class="logo">
-            <ul>
-                <li><a href="">home</a></li>
-                <li><a href="#s2">serviços</a></li>
-                <li><a href="#s3">sobre</a></li>
-                <li><a href="">contato</a></li>
-            </ul>
-            <div class="login">
-                <h3><a href="">Entre</a></h3>
-                <h3><a href="">Cadastre-se</a></h3>
-                <div class="bar"></div>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="home" id="s1">
-            <!--  -->
-            <div class="carro1">
-                <h1>Precisando de serviços <br> para seu carro?</h1>
-                <p>solicite orçamentos e agende serviços com <br> os melhores mecanicos de carros</p>
-                <img src="../AutoClub/imagens/carroazul.png" id="imgc1">
+  <a href=""><img src="images/logo.png" alt="" class="logo"></a>
+  <!--  <img src="..//AutoClub/imagens/logo.png" alt=""> -->
+  <div class="pricing-table">
+    <div class="pricing-card">
+    
+      <h2>PACOTE 1</h2>
+      <ul>
 
-            </div>
+        <strong>
+          <li>✔ Promoções e ofertas</li>
+          <li>✔ Descontos ampliados em até 5%</li>
+          <li>✘ Lembretes personalizados</li>
+          <li>✘ Lista de favoritos</li>
+          <li>✘ Assistência 24h</li>
+        </strong>
 
-            <img src="../AutoClub/imagens/WhatsApp Image 2024-08-29 at 00.42.22.jpeg" id="imgc2">
+      </ul>
+      <div class="price">
+        <span>R$ 25,00</span>
+        <p>por mês</p>
+      </div>
+      <button class="btn">COMPRAR</button>
+      
+    </div>
 
-        </section>
+    <div class="pricing-card destaque">
+      <h2>PACOTE 2</h2>
+      <!--  -->
+      
+      <ul>
+        <strong>
+          <li>✔ Promoções e ofertas semanal</li>
+          <li>✔ Descontos ampliados em até 10%</li>
+          <li>✔ Lembretes personalizados</li>
+          <li>✔ Lista de favoritos</li>
+          <li>✔ Assistência 24h</li>
+        </strong>
+      </ul>
+      <div class="price">
+        <span>R$ 75,00</span>
+        <p>por mês</p>
+      </div>
+      <button class="btn">COMPRAR</button>
+      <!--  -->
+    </div>
 
-
-        <section class="home2" id="s2">
-            <div class="container">
-
-                <h2>Confira os serviços de oficinas por categoria</h2>
-
-                <div class="cb">
-
-                    <img src="../AutoClub/imagens/troca d oleo.png" alt="" class="bolotas">
-                    <p>troca de oleo</p>
-                    <img src="../AutoClub/imagens/troca d pneu.png" alt="" class="bolotas">
-                    <p>troca de pneu</p>
-                    <img src="../AutoClub/imagens/suspenção.png" alt="" class="bolotas">
-                    <p>Suspensão</p>
-                    <img src="../AutoClub/imagens/freios.png" alt="" class="bolotas">
-                    <p id="pf">Freios</p>
-                    <img src="../AutoClub/imagens/imagem_5-removebg-preview.png" alt="" class="bolotas">
-                    <p id="ps">sistema eletrico</p>
-
-                </div>
-
-            </div>
-
-            <div class="ipt">
-                <input type="text" placeholder="Pesquisa...">
-                <span class="material-symbols-outlined">
-                    search
-                </span>
-
-            </div>
-
-
-            <div class="cp">
-                <div class="peças">
-                    <img src="" alt="">
-                    <p>Resumo da peça e serviço</p>
-                </div>
-
-                <div class="peças"> <img src="" alt="">
-                    <p>Resumo da peça e serviço</p>
-                </div>
-                <div class="peças"> <img src="" alt="">
-                    <p>Resumo da peça e serviço</p>
-                </div>
-            </div>
-        </section>
-        <section id="s3">
-            <h1>QUEM SOMOS?</h1>
-            <div class="ds3">
-                <div class="ds3-item">
-                    <h2>MISSÃO</h2>
-                    <p>Oferecer a melhor <br> opção para qualquer <br> proprietário de <br> veículo em <br>
-                        manutenção preventiva e <br> corretiva.</p>
-                </div>
-                <div class="ds3-item">
-                    <h2>VISÃO</h2>
-                    <p>Ser o maior centro <br> global da América <br> Latina, trazendo <br> solução em <br>
-                        manutenção aos <br> apaixonados em <br> veículos.</p>
-                </div>
-                <div class="ds3-item">
-                    <h2>VALORES</h2>
-                    <p>Excelência no <br> atendimento e nos <br> serviços, qualidade na <br> entrega, pontualidade,
-                        <br> além de
-                        compromisso<br> para uma experiência <br> única.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-
-        <footer>
-            <div class="sf1">
-                <div class="d1s1">
-                    <h1>Oficina Castelano</h1>
-                    <h3 class="b3s1">(21) 0000-0000</h3>
-                    <div class="barra"></div>
-                    <p>R.Maravilha, 710 - Bangu, Rio de Janeiro - RJ, 21810-100</p>
-                    <h2>Horário do atendimento:</h2>
-                    <p>Segunda a Sexta das 8h as 17:30h</p>
-                    <p>Sábado das 8h as 13h</p>
-                    <a href="">Saiba mais...</a>
-                </div>
-                <div class="d2s1">
-                    <h1>Oficina Castelano</h1>
-                    <h3 class="b3s2">(21) 0000-0000</h3>
-                    <div class="barra2"></div>
-                    <p>R.Maravilha, 710 - Bangu, Rio de Janeiro - RJ, 21810-100</p>
-                    <h2>Horário do atendimento:</h2>
-                    <p>Segunda a Sexta das 8h as 17:30h</p>
-                    <p>Sábado das 8h as 13h</p>
-                    <a href="">Saiba mais...</a>
-                </div>
-            </div>
-            <div class="sf2">
-                <div class="d1s2">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/512px-WhatsApp.svg.png"
-                        alt="" id="i1"> <a href=""><button><strong>Central de Atendimento</strong></button></a>
-                    <p>(21) 0000-0000</p>
-                    <img src="https://img.icons8.com/win10/200/FFFFFF/whatsapp.png" alt="" id="i2"> <a
-                        href=""><button><strong>Chame no WhatsApp</strong></button></a>
-                    <p>(21) 0000-0000</p>
-                </div>
-                <div class="d2s2">
-                    <h2>Lojas Parceiras</h2>
-                    <div class="seila">
-                        <img src="../AutoClub/imagens/Chevrolet-removebg-preview.png" alt=""><a href=""></a><img
-                            src="../AutoClub/imagens/Hyundai-removebg-preview.png" alt=""><img
-                            src="../AutoClub/imagens/Jeep-removebg-preview.png" alt="">
-                    </div>
-                    <h3>Nosso Objetivo</h3>
-                    <div class="colunas">
-                        <p>Oferecer a melhor opção para qualquer propietario de veiculo em manutenção preventiva e
-                            corretiva.
-                        </p>
-                        <p>Ser o maior centro global da america latina, trazendo solução em manutenção aos apaixonados
-                            em veículos.
-                        </p>
-                        <p> Excelencia no atendimento e nos serviços,qualidade na entregan pontualidade, além de
-                            compromisso
-                            para um experiência unica.</p>
-
-
-                    </div>
-                    <h4>AutoClub © 2024 - Todos os direitos <br> reservados</h4>
-                </div>
-                <div class="d3s2">
-
-                    <div class="cc">
-                        <img src="../AutoClub/imagens/logo.png" class="logo">
-                        <img src="https://img.icons8.com/m_outlined/200/FFFFFF/instagram-new.png" alt="" class="icone">
-                        <img src="https://img.icons8.com/fluent-systems-filled/200/FFFFFF/facebook-new.png" alt=""
-                            class="icone">
-                        <img src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/youtube-app-white-icon.png"
-                            alt="" class="icone">
-                    </div>
-                    <a href="#s1"><img src="../AutoClub/imagens/Seta-removebg-preview.png" alt="" id="seta"></a>
-
-                    <img src="../AutoClub/imagens/McAfee-removebg-preview.png" alt="" id="mcaf">
-                    <img src="../AutoClub/imagens/Google_Safe-removebg-preview.png" alt="" id="gsf">
-                    <img src="../AutoClub/imagens/certificado_SSL-removebg-preview.png" alt="" id="cs">
-
-
-                </div>
-            </div>
-        </footer>
-    </main>
-
-    <link rel="stylesheet" href="teste.css">
-    <script src="teste.js"></script>
+    <div class="pricing-card">
+      <h2 id="p3">PACOTE 3</h2>
+      <!--  -->
+      <ul>
+        <strong>
+          <li>✔ Promoções e ofertas exclusivas</li>
+          <li>✔ Descontos de até 15%</li>
+          <li>✔ Suporte prioritário</li>
+          <li>✔ Embletes personalizados</li>
+          <li>✔ Assistência 24h</li>
+        </strong>
+      </ul>
+      <div class="price">
+        <span>R$ 150,00</span>
+        <p>por mês</p>
+      </div>
+      <button class="btn">COMPRAR</button>
+      <!--  -->
+    </div>
+  </div>
+  <script src="teste.js"></script>
 </body>
 
 </html>
