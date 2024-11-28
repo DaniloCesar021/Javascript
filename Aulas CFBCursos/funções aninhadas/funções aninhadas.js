@@ -8,7 +8,7 @@
     }
     return somar(valores)
 }
-console.log(soma(10, 5, 15))
+console.log(soma(11, 5, 15))
 
 
 //arrow function aninhada com parametro rest
