@@ -1,12 +1,14 @@
+let c = document.querySelector('.container')
+let b = document.querySelector('.barra')
+c.addEventListener('mouseover', seila)
+c.addEventListener('mouseout', seila2)
 
-document.querySelectorAll('.btn').forEach(button => {
-    button.addEventListener('click', () => {
-      alert('Pacote selecionado!');
-    });
-    
-  });
-/*    */
-VanillaTilt.init(document.querySelector(".logo"), {
-  max: 25,
-  speed: 400
-});
+function seila() {
+  b.style.width = '40px'
+  b.style.transition = '1s'
+}
+function seila2() {
+  b.style.transition = '1s'
+  b.style.width = '400px'
+      
+}
