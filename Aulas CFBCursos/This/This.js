@@ -1,4 +1,4 @@
-/* function aluno(nome, nota) {
+function aluno(nome, nota) {
     this.nome = nome
     this.nota = nota
 
@@ -6,5 +6,5 @@
     console.log(nota)
 }
 aluno('Danilo', 100);
- */
+
 
