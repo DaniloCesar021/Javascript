@@ -15,3 +15,4 @@ const nomes = ['Danilo', 'rede globo', 'joão', 'lucas', 'rose', 'cesar'];  // A
 nomes.forEach(elemento => {  // Itera sobre o array 'nomes' usando 'forEach'
     caixa.innerHTML += `<p>${elemento}</p>`;  // Adiciona cada nome diretamente dentro de 'caixa' usando template literals
 });
+    
