@@ -226,9 +226,11 @@ header.sticky {
   0% {
     box-shadow: 0 0 5px #8b0000;
   }
+
   50% {
     box-shadow: 0 0 15px #ff3333;
   }
+
   100% {
     box-shadow: 0 0 5px #8b0000;
   }
@@ -287,7 +289,7 @@ header.sticky {
 }
 
 .elemento:hover {
-  transform: translateY(-8px);
+  transform: translateY(-10px);
 }
 
 /* Portfolio */
@@ -507,6 +509,26 @@ body::-webkit-scrollbar-thumb {
 /* Experiencia section */
 .experiencia {
   background-color: #2a2a2a;
+}
+
+.elemento img {
+  width: 90px;
+  height: 90px;
+}
+
+#jsimg {
+  width: 70px;
+  height: 70px;
+}
+
+#Bootstrap {
+  width: 70px;
+  height: 65px;
+}
+
+#Tailwind {
+  width: 70px;
+  height: 65px;
 }
 
 /* Responsivo */
