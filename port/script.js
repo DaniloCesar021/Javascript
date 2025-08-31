@@ -14,3 +14,11 @@ VanillaTilt.init(document.querySelector(".sobre-img"), {
 	max: 8,
 	speed: 400
 }); 
+/*  */	
+const colorInput = document.getElementById("colorChange");
+
+colorInput.addEventListener("input", function() {
+    document.documentElement.style.setProperty("--main-color", this.value);
+});
+
+/*  */

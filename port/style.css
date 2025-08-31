@@ -19,7 +19,30 @@ body {
   background: #202020;
   display: block;
 }
+/*  */
+.color-picker {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #2a2a2a;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
 
+.color-picker label {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+.color-picker input[type="color"] {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+}
+/*  */
 /* Header */
 header {
   position: fixed;
