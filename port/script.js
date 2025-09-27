@@ -4,7 +4,7 @@ window.addEventListener("scroll", () => {
 });
 let menu = document.querySelector("#menu-icon");
 let navlist = document.querySelector(".navlist");
-
+//teste
 menu.onclick = () => {
 	menu.classList.toogle("bx-x");
 	navlist.classList.toogle("active");
