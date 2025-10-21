@@ -1,18 +1,34 @@
-/* let caixa = document.querySelector('.caixa');  // Seleciona o elemento com a classe 'caixa' e armazena na variável 'caixa'
-const nomes = ['Danilo', 'rede globo', 'joão', 'lucas'];  // Cria um array com nomes e strings que serão exibidas na página
+// Seleciona o elemento HTML com id "numero" e armazena na constante 'numero'
+const numero = document.querySelector("#numero");
 
+// Cria uma nova Promise (promessa) que simula uma operação assíncrona
+  let promise = new Promise((res, rej) => {
+  let resultado = true; // Define o resultado como true (poderia ser false para simular erro)
+  let tempo = 3000; // Tempo de espera (3 segundos = 3000 milissegundos)
 
-nomes.map((elementos) => {  // Itera sobre o array 'nomes' usando o método 'map', onde 'elementos' é o valor atual
-    let p = document.createElement('p');  // Cria um novo elemento <p> (parágrafo)
-    p.innerHTML = elementos;  // Define o conteúdo HTML do parágrafo como o valor atual da iteração (nome ou string)
-    caixa.appendChild(p);  // Adiciona o novo parágrafo como filho do elemento 'caixa', exibindo-o na página
-}); */
-
-let caixa = document.querySelector('.caixa');  // Seleciona o elemento com a classe 'caixa'
-const nomes = ['Danilo', 'rede globo', 'joão', 'lucas', 'rose', 'cesar'];  // Array com os nomes
-
-
-nomes.forEach(elemento => {  // Itera sobre o array 'nomes' usando 'forEach'
-    caixa.innerHTML += `<p>${elemento}</p>`;  // Adiciona cada nome diretamente dentro de 'caixa' usando template literals
+  // Função que será executada após 3 segundos
+  setTimeout(() => {
+    if (resultado) {
+      res("deu tudo certo"); // Se resultado for true, resolve a Promise com essa mensagem
+    } else {
+      rej("deu tudo errado"); // Se resultado for false, rejeita a Promise com essa mensagem
+    }
+  }, tempo);
 });
-    
+
+// Define o que fazer quando a Promise for resolvida com sucesso
+promise.then((retorno) => {
+  numero.innerHTML = retorno; // Exibe a mensagem de sucesso no elemento com id "numero"
+  numero.classList.remove("erro"); // Remove a classe CSS "erro" (caso exista)
+  numero.classList.add("ok"); // Adiciona a classe CSS "ok"
+});
+
+// Define o que fazer quando a Promise for rejeitada (erro)
+promise.catch((retorno) => {
+  numero.innerHTML = retorno; // Exibe a mensagem de erro no elemento com id "numero"
+  numero.classList.add("erro"); // Adiciona a classe CSS "erro"
+  numero.classList.remove("ok"); // Remove a classe CSS "ok" (caso exista)
+});
+
+// Define o conteúdo inicial enquanto a Promise está "processando"
+numero.innerHTML = "processando..."; // Mostra "processando..." antes da Promise ser resolvida/rejeitada
