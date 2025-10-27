@@ -1,4 +1,4 @@
- const numero = document.querySelector("#numero");
+/* const numero = document.querySelector("#numero");
 
 let promise = new Promise((res, rej) => {
   let resultado = true;
@@ -22,8 +22,8 @@ promise.catch((retorno) => {
   numero.classList.remove("ok");
 });
 numero.innerHTML = "processando...";
-
-/* // Seleciona o elemento HTML com id "numero" e armazena na constante 'numero'
+ */
+// Seleciona o elemento HTML com id "numero" e armazena na constante 'numero'
 const numero = document.querySelector("#numero");
 
 // Cria uma nova Promise (promessa) que simula uma operação assíncrona
@@ -57,4 +57,3 @@ promise.catch((retorno) => {
 
 // Define o conteúdo inicial enquanto a Promise está "processando"
 numero.innerHTML = "processando..."; // Mostra "processando..." antes da Promise ser resolvida/rejeitada
- */

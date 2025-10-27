@@ -21,3 +21,4 @@ promisse.catch((retorno) => {
   numero.classList.add("erro");
   numero.classList.remove("ok");
 });
+numero.innerHTML = "processando...."
